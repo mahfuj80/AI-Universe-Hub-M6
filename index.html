@@ -1,19 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Universe Hub</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/13b995a34b.js" crossorigin="anonymous"></script>
+    <!-- google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- tailwind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <header>
-        <h1>AI Universe Hub</h1>
+<body style="font-family: 'Work Sans', sans-serif;">
+    <!-- Headings -->
+    <header class="text-center">
+        <h1 class="text-4xl my-6 font-bold">AI Universe Hub</h1>
+        <!-- Short Button -->
+        <button class="btn btn-error mx-auto text-white">Sort By Date</button>
     </header>
-    <main>
-
+    <main class="container mx-auto text-center mt-5">
+        <!-- Items Container -->
+        <div id="item-container" class="grid grid-cols-3 gap-4">
+        </div>
+        <!-- Show More Button -->
+        <button onclick="showMoreButton()" id="show-more" class="btn my-6 btn-error mx-auto text-white">See
+            More</button>
     </main>
+    <!-- Link With the Script -->
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
